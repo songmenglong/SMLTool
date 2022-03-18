@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SMLTool_Example' do
+  pod 'SMLTool', :path => '../'
+
+  target 'SMLTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
