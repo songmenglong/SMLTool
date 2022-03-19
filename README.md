@@ -20,6 +20,42 @@ it, simply add the following line to your Podfile:
 pod 'SMLTool'
 ```
 
+## 使用说明
+### swift字典与model转换
+```swift
+// Model转字典
+let model = People(name: "张三", sex: 0, age: 30)
+guard let dict = ModelEncoder.encoder(toDictionary: model) else {
+    return
+}
+debugPrint("", dict)
+
+// 字典转Model
+let dict: [String: Any] = ["sex": 1, "age": 32, "name": "李四"]
+guard let model = try? ModelDecoder.decode(People.self, param: dict) else {
+    return
+}
+debugPrint("", model)
+```
+
+### json字符串与字典转换
+```swift
+// JSON转字典
+let json = "{\"name\":\"刘大\",\"age\":25,\"sex\":1}"
+guard let dict = JSONTool.translationJsonToDic(from: json) else {
+    return
+}
+debugPrint("", dict)
+
+// 字典转JSON
+let dict: [String: Any] = ["sex": 1, "age": 27, "name": "王五"]
+guard let json = JSONTool.translationObjToJson(from: dict) else {
+    return
+}
+debugPrint("", json)
+```
+
+
 ## Author
 
 songmenglong, 983174628@qq.com
