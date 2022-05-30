@@ -16,6 +16,7 @@
 		84A49B11859E804456DAF008 /* Pods_SMLTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B475AEDC687A05EFC25652C /* Pods_SMLTool_Tests.framework */; };
 		A238635C27E54EB400938202 /* FunctionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238635B27E54EB400938202 /* FunctionListVC.swift */; };
 		A25C84AD27E553F200ADAC3B /* DataConvertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C84AC27E553F200ADAC3B /* DataConvertVC.swift */; };
+		A25C84AF27EF0A8900ADAC3B /* CryptoDataListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C84AE27EF0A8900ADAC3B /* CryptoDataListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8B7C9D85CEE5EED4D33213E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A238635B27E54EB400938202 /* FunctionListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionListVC.swift; sourceTree = "<group>"; };
 		A25C84AC27E553F200ADAC3B /* DataConvertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConvertVC.swift; sourceTree = "<group>"; };
+		A25C84AE27EF0A8900ADAC3B /* CryptoDataListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDataListVC.swift; sourceTree = "<group>"; };
 		B78BA5D73E678928FF319F45 /* Pods-SMLTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMLTool_Example.release.xcconfig"; path = "Target Support Files/Pods-SMLTool_Example/Pods-SMLTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DCFD0E73549A0D23FF6F17F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				A238635B27E54EB400938202 /* FunctionListVC.swift */,
 				A25C84AC27E553F200ADAC3B /* DataConvertVC.swift */,
+				A25C84AE27EF0A8900ADAC3B /* CryptoDataListVC.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -215,10 +218,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7UA78HHHB8;
 						LastSwiftMigration = 1330;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7UA78HHHB8;
 						LastSwiftMigration = 1330;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -339,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A238635C27E54EB400938202 /* FunctionListVC.swift in Sources */,
+				A25C84AF27EF0A8900ADAC3B /* CryptoDataListVC.swift in Sources */,
 				A25C84AD27E553F200ADAC3B /* DataConvertVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -486,6 +492,7 @@
 			baseConfigurationReference = 7732E53748E679DE9E94880C /* Pods-SMLTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7UA78HHHB8;
 				INFOPLIST_FILE = SMLTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -501,6 +508,7 @@
 			baseConfigurationReference = B78BA5D73E678928FF319F45 /* Pods-SMLTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7UA78HHHB8;
 				INFOPLIST_FILE = SMLTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -515,6 +523,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59DB21C0E200CB25582FA7D7 /* Pods-SMLTool_Tests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 7UA78HHHB8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -537,6 +547,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A9F59992084D5079786F496 /* Pods-SMLTool_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 7UA78HHHB8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension Data {
+public extension Data {
     
     /// 转十六进制字符串
     /// Create hexadecimal string representation of `Data` object.
@@ -16,4 +16,5 @@ extension Data {
     func hexadecimal() -> String {
         return map { String(format: "%02x", $0)}.joined(separator: "")
     }
+    
 }
